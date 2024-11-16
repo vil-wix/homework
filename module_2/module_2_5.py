@@ -1,5 +1,3 @@
-from gc import get_threshold
-
 
 def get_matrix(n, m, value):
     matrix = []
