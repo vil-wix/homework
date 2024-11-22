@@ -1,17 +1,14 @@
 calls = 0
 
-
 def count_calls():
     global calls
     calls += 1
-
 
 def string_info(string):
     stroka = str(string)
     stroka = (len(stroka), stroka.upper(), stroka.lower())
     count_calls()
     return stroka
-
 
 def is_contains(string, list_to_search):
     string = str(string.lower())
@@ -25,7 +22,6 @@ def is_contains(string, list_to_search):
             stroka = False
             continue
     return stroka
-
 
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
