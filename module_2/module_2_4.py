@@ -3,12 +3,12 @@ primes = []
 not_primes = []
 for i in numbers:
     is_prime = True
-    for j in range(2,i):
-        if i%j== 0:
-            is_prime= False
+    for j in range(2, i):
+        if i % j == 0:
+            is_prime = False
             not_primes.append(i)
             break
-    if is_prime== True and i !=1:
+    if is_prime == True and i != 1:
         primes.append(i)
 
 print(primes)
