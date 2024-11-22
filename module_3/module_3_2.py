@@ -2,7 +2,7 @@ variants = (".com", ".ru", ".net", ".gmail")
 
 
 def send_email(sms, recipient, *, sender='university.help@gmail.com'):
-    if '@' not in recipient and '@' not in sender or sender.endswith(variants) and recipient or sender.endswith(variants) or recipient.endswith(variants):
+    if '@' not in recipient and '@' not in sender or sender.endswith(variants) and  recipient.endswith(variants):
         print('Невозможно отправить письмо с адреса ',sender,' на адрес' + recipient)
     elif sender == recipient:
         print('Нельзя отправить письмо самому себе!')
