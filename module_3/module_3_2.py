@@ -7,7 +7,7 @@ def send_email(sms, recipient, *, sender='university.help@gmail.com'):
     elif sender == recipient:
         print('Нельзя отправить письмо самому себе!')
     elif sender == sender:
-        print('Письмо успешно отправлено с адреса ' , sender , ' на адрес ' + recipient)
+        print('Письмо успешно отправлено с адреса ', sender, ' на адрес ' + recipient)
     else:
         print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса ' + sender + ' на адрес' + recipient)
 
