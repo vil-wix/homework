@@ -3,18 +3,14 @@ primes = []
 not_primes = []
 for i in numbers:
     is_prime = True
-    if i < 2:
-        print('1- Не простое и не сложное число')
-        continue
-    else:
-        f = i ** (1 / 2)
-        for j in range(2, int(f + 1)):
-            if i % j == 0:
-                is_prime = False
-                break
-    if not is_prime:
-        not_primes.append(i)
-    else:
+    for j in range(2,i):
+        if i%j== 0:
+            is_prime= False
+            not_primes.append(i)
+            break
+    if is_prime== True and i !=1:
         primes.append(i)
-print('Primes:', primes)
-print('Not_primes:',not_primes)
+
+print(primes)
+print(not_primes)
+
