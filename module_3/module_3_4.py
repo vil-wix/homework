@@ -3,6 +3,7 @@ import re
 
 def single_root_words(root_word, *other_words):
     same_words = []
+    root_word=root_word.lower()
     for i in other_words:
         if re.search(root_word, i):
             same_words.append(i)
